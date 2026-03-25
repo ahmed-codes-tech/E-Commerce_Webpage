@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>E-Commerce Site</title>
-  <link rel="stylesheet" href="E-commerce_ahmed.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
@@ -15,14 +16,8 @@
     <!-- Logo -->
     <a class="logo" href="#">
       <div class="logo-icon">
-        <!-- <svg viewBox="0 0 24 24">
-          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 01-8 0"/>
-        </svg> -->
-        <img src="Images/logo-colored.png" alt="" srcset="">
+        <img src="Assets/Images/logo-colored.png" alt="" srcset="">
       </div>
-      <!-- <span class="logo-text">Brand</span> -->
     </a>
 
     <!-- Search Bar -->
@@ -43,27 +38,165 @@
     <!-- Action Icons -->
     <div class="nav-actions">
       <a class="nav-action" href="#">
-        <svg class="svg_1" fill="" viewBox="0 0 512 512" id="_x30_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <ellipse cx="256" cy="130" rx="110" ry="130"></ellipse> <path d="M36,478.191C36,390.825,134.497,320,256,320s220,70.825,220,158.191v0C476,496.863,460.863,512,442.192,512H69.808 C51.137,512,36,496.863,36,478.191L36,478.191z"></path> </g> </g></svg>
+        <img class="svg_1" src="Assets/Images/profile.svg"> 
         <span>Profile</span>
       </a>
       <a class="nav-action" href="#">
-        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        <img src="Assets/Images/msg.svg" alt="" srcset="">
         <span>Message</span>
       </a>
       <a class="nav-action" href="#">
-        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <img src="Assets/Images/order.svg" alt="" srcset="">
         <span>Orders</span>
       </a>
       <a class="nav-action" href="#">
-        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+        <img src="Assets/Images/cart.svg" alt="" srcset="">
         <span>My cart</span>
       </a>
     </div>
 
   </nav>
+
+  <!-- Secondary Nav Bar -->
+  <div class="secondary-navbar">
+    <div class="secondary-navbar-inner">
+      <!-- Left: nav links -->
+      <div class="secondary-nav-links">
+        <a class="secondary-nav-link" href="#">
+          <span class="hamburger-icon">&#9776;</span>
+          All category
+        </a>
+        <a class="secondary-nav-link" href="#">Hot offers</a>
+        <a class="secondary-nav-link" href="#">Gift boxes</a>
+        <a class="secondary-nav-link" href="#">Projects</a>
+        <a class="secondary-nav-link" href="#">Menu item</a>
+        <a class="secondary-nav-link has-dropdown" href="#">
+          Help
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+
+      <!-- Right: language & ship to -->
+      <div class="secondary-nav-right">
+        <a class="secondary-nav-right-item" href="#">
+          English, USD
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <a class="secondary-nav-right-item" href="#">
+          Ship to
+          <img class="flag-icon" src="https://flagcdn.com/w20/de.png" alt="Germany flag" width="20" height="14"/>
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
 </header>
 
 <div class="demo-content">Page content goes here.</div>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <!-- Div 1: Brand block — left: 129px, top: 40px, width: 276, height: 157 -->
+    <div class="footer-brand">
+      <!-- Logo -->
+      <a class="footer-logo" href="#">
+        <div class="footer-logo-icon">
+          <img src="Assets/Images/logo-colored.png" alt="Brand logo"/>
+        </div>
+      </a>
+      <!-- Description: top: 101px, left: 129px, width: 276, height: 48 -->
+      <p class="footer-desc">Best information about the company gies here but now lorem ipsum is</p>
+      <!-- Socials row: top: 165px, left: 129px, width: 200, height: 32 -->
+      <div class="footer-socials">
+        <!-- Facebook: left: 129px -->
+        <a class="footer-social-link" href="#">
+          <img src="Assets/Images/facebook3.png" alt="Facebook" width="32" height="32"/>
+        </a>
+        <!-- Twitter: left: 171px (129 + 32 + 10 gap) -->
+        <a class="footer-social-link" href="#">
+          <img src="Assets/Images/twitter3.png" alt="Twitter" width="32" height="32"/>
+        </a>
+        <!-- LinkedIn: left: 213px (171 + 32 + 10 gap) -->
+        <a class="footer-social-link" href="#">
+          <img src="Assets/Images/linkedin3.png" alt="LinkedIn" width="32" height="32"/>
+        </a>
+        <!-- Instagram -->
+        <a class="footer-social-link" href="#">
+          <img src="Assets/Images/instagram3.png" alt="" srcset="">
+        </a>
+        <!-- YouTube -->
+        <a class="footer-social-link" href="#">
+          <img src="Assets/Images/youtube3.png" alt="" srcset="">
+        </a>
+      </div>
+    </div>
+
+    <!-- Div 2: About — left: 466px -->
+    <div class="footer-col footer-col--about">
+      <h4 class="footer-col-title">About</h4>
+      <a class="footer-col-link" href="#">About Us</a>
+      <a class="footer-col-link" href="#">Find store</a>
+      <a class="footer-col-link" href="#">Categories</a>
+      <a class="footer-col-link" href="#">Blogs</a>
+    </div>
+
+    <!-- Div 3: Partnership — left: 611px -->
+    <div class="footer-col footer-col--partnership">
+      <h4 class="footer-col-title">Partnership</h4>
+      <a class="footer-col-link" href="#">About Us</a>
+      <a class="footer-col-link" href="#">Find store</a>
+      <a class="footer-col-link" href="#">Categories</a>
+      <a class="footer-col-link" href="#">Blogs</a>
+    </div>
+
+    <!-- Div 4: Information — left: 765px -->
+    <div class="footer-col footer-col--information">
+      <h4 class="footer-col-title">Information</h4>
+      <a class="footer-col-link" href="#">Help Center</a>
+      <a class="footer-col-link" href="#">Money Refund</a>
+      <a class="footer-col-link" href="#">Shipping</a>
+      <a class="footer-col-link" href="#">Contact us</a>
+    </div>
+
+    <!-- Div 5: For users — left: 964px -->
+    <div class="footer-col footer-col--users">
+      <h4 class="footer-col-title">For users</h4>
+      <a class="footer-col-link" href="#">Login</a>
+      <a class="footer-col-link" href="#">Register</a>
+      <a class="footer-col-link" href="#">Settings</a>
+      <a class="footer-col-link" href="#">My Orders</a>
+    </div>
+
+    <!-- Div 6: Get app — left: 1129px -->
+    <div class="footer-app">
+     <div class="innerapp-div">
+      <h4 class="footer-col-title">Get app</h4>
+        <a class="app-store-btn" href="#">
+          <img src="Assets/Images/Subtract.png" alt="">
+        </a>
+     </div>
+     <div class="innerapp-div">
+      <a class="app-store-btn" href="#">
+        <img src="Assets/Images/Logo.png" alt="">
+      </a>
+    </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom Bar -->
+  <div class="footer-bottom">
+    <span class="footer-copyright">© 2023 Ecommerce.</span>
+    <a class="footer-lang" href="#">
+      <img src="https://flagcdn.com/w20/us.png" alt="US flag" width="20" height="14"/>
+      English
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </div>
+</footer>
 
 </body>
 </html>
