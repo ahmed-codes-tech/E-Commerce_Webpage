@@ -24,7 +24,7 @@ header {
 .navbar {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 80px 0 130px;/*px aligns My cart above "Ship to"; left: 130px aligns logo above "All category" */
+  padding: 0 128px 0 130px; /* right: 128px aligns My cart above "Ship to"; left: 130px aligns logo above "All category" */
   height: 86px;
   display: flex;
   align-items: center;
@@ -153,7 +153,6 @@ header {
     background 0.15s,
     color 0.15s;
   cursor: pointer;
-  
 }
 
 .nav-action:hover {
@@ -236,7 +235,28 @@ header {
 
 .dropdown-arrow {
   flex-shrink: 0;
-  color: rgba(139, 150, 165, 1);
+  color: rgba(28, 28, 28, 1);
+}
+
+.about-link {
+  position: absolute;
+  left: 336px; /* 466px (page) - 130px (inner div margin-left) */
+  top: 0;
+  width: 47px;
+  height: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: rgba(28, 28, 28, 1);
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.about-link:hover {
+  color: #0d6efd;
 }
 
 /* Right: language & ship to */
@@ -253,6 +273,8 @@ header {
   display: flex;
   align-items: center;
   gap: 6px;
+  position: relative;
+  right: 63px;
   height: 24px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -282,6 +304,255 @@ header {
 .flag-icon {
   border-radius: 2px;
   flex-shrink: 0;
+}
+
+/* ── SECTION MAIN ─────────────────────────────────────── */
+.section-main {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.section-main-inner {
+  width: 1180px;
+  height: 400px;
+  padding: 20px 16px 20px 16px;
+  position: relative;
+  left: 86px;
+  background: rgba(255, 255, 255, 1);
+border: 1px solid rgba(222, 226, 231, 1);
+border-radius: 6px;
+  display: grid;
+  grid-template-columns: 250px 665px 200px;
+  column-gap: 15px;
+  align-items: start;
+}
+
+/* ── Col 1: Category Nav ── */
+.cat-nav {
+  width: 250px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cat-nav-item {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(28, 28, 28, 1);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+
+.cat-nav-item--active {
+  background: rgba(235, 242, 255, 1);
+  font-weight: 500;
+  color: rgba(28, 28, 28, 1);
+}
+
+.cat-nav-item:hover:not(.cat-nav-item--active) {
+  background: #f1f5f9;
+  color: #0d6efd;
+}
+
+/* ── Col 2: Banner ── */
+.banner-col {
+  width: 665px;
+  height: 360px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 1);
+  /* border-radius: 6px; */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-text-div {
+  position: absolute;
+  width: 253px;
+  top: 53px;
+  left: 43px;
+  color: rgba(28, 28, 28, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text-top {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: rgba(28, 28, 28, 1);
+  margin: 0 0 6px 0;
+}
+
+.banner-text-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: rgba(28, 28, 28, 1);
+  margin: 0 0 18px 0;
+}
+
+.banner-btn {
+  width: 119px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(28, 28, 28, 1);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.banner-btn:hover {
+  background: #f1f5f9;
+}
+
+/* ── Col 3: Right Cards ── */
+.right-cards {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-card {
+  width: 200px;
+  border-radius: 6px;
+}
+
+/* Row 1: User card */
+.user-card {
+  height: 150px;
+  background: rgba(227, 240, 255, 1);
+  padding: 12px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar-div {
+  width: 40px;
+  height: 40px;
+  background: rgba(145, 177, 231, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.photo {
+  width: 28.24px;
+  height: 33.89px;
+  object-fit: contain;
+}
+
+.user-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(28, 28, 28, 1);
+}
+
+.join-btn {
+  width: 180px;
+  height: 30px;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.join-btn:hover {
+  opacity: 0.9;
+}
+
+.login-btn {
+  width: 180px;
+  height: 30px;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(13, 110, 253, 0.3);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(13, 110, 253, 1);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.login-btn:hover {
+  background: #f1f5f9;
+}
+
+/* Rows 2 & 3: Promo cards */
+.promo-card {
+  height: 95px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.promo-card--orange {
+  background: rgba(243, 131, 50, 1);
+}
+
+.promo-card--teal {
+  background: rgba(85, 189, 195, 1);
+}
+
+.promo-text {
+  width: 144px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 1);
 }
 
 /* ── FOOTER ───────────────────────────────────────────── */
