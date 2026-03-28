@@ -153,6 +153,237 @@
   </div>
 </section>
 
+<section class="section-sale">
+  <div class="bg-card">
+ 
+    <!-- Left: Countdown -->
+    <div class="countdown">
+      <p class="deals-title">Deals and offers</p>
+      <p class="deals-sub">Hygiene equipments</p>
+ 
+      <div class="time" id="countdown-timer">
+        <div class="time-box">
+          <span class="time-num" id="cd-days">04</span>
+          <span class="time-label">Days</span>
+        </div>
+        <div class="time-box">
+          <span class="time-num" id="cd-hours">13</span>
+          <span class="time-label">Hour</span>
+        </div>
+        <div class="time-box">
+          <span class="time-num" id="cd-mins">34</span>
+          <span class="time-label">Min</span>
+        </div>
+        <div class="time-box">
+          <span class="time-num" id="cd-secs">56</span>
+          <span class="time-label">Sec</span>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Right: Items -->
+    <div class="sale-items">
+ 
+      <!-- Item 1: Smart watches -->
+      <div class="sale-item">
+        <div class="sale-img-wrap">
+          <img src="Assets/Images/smartwatch.png" alt="Smart watches"/>
+        </div>
+        <div class="sale-info">
+          <p class="sale-name">Smart watches</p>
+          <span class="sale-badge">-25%</span>
+        </div>
+      </div>
+ 
+      <!-- Item 2: Laptops -->
+      <div class="sale-item">
+        <div class="sale-img-wrap">
+          <img src="Assets/Images/laptops.png" alt="Laptops"/>
+        </div>
+        <div class="sale-info">
+          <p class="sale-name">Laptops</p>
+          <span class="sale-badge">-15%</span>
+        </div>
+      </div>
+ 
+      <!-- Item 3: GoPro cameras -->
+      <div class="sale-item">
+        <div class="sale-img-wrap">
+          <img src="Assets/Images/camera.png" alt="GoPro cameras"/>
+        </div>
+        <div class="sale-info">
+          <p class="sale-name">GoPro cameras</p>
+          <span class="sale-badge">-40%</span>
+        </div>
+      </div>
+ 
+      <!-- Item 4: Headphones -->
+      <div class="sale-item">
+        <div class="sale-img-wrap">
+          <img src="Assets/Images/headset.png" alt="Headphones"/>
+        </div>
+        <div class="sale-info">
+          <p class="sale-name">Headphones</p>
+          <span class="sale-badge">-25%</span>
+        </div>
+      </div>
+ 
+      <!-- Item 5: Canon cameras -->
+      <div class="sale-item">
+        <div class="sale-img-wrap">
+          <img src="Assets/Images/mobilephones.png" alt="Canon cameras"/>
+        </div>
+        <div class="sale-info">
+          <p class="sale-name">Canon cameras</p>
+          <span class="sale-badge">-25%</span>
+        </div>
+      </div>
+ 
+    </div><!-- /sale-items -->
+  </div><!-- /bg-card -->
+</section>
+ 
+<script>
+  // Set your target end date/time here
+  const endTime = new Date();
+  endTime.setDate(endTime.getDate() + 4);
+  endTime.setHours(endTime.getHours() + 13);
+  endTime.setMinutes(endTime.getMinutes() + 34);
+  endTime.setSeconds(endTime.getSeconds() + 56);
+ 
+  function pad(n) { return String(n).padStart(2, '0'); }
+ 
+  function updateCountdown() {
+    const now = new Date();
+    const diff = endTime - now;
+    if (diff <= 0) {
+      document.getElementById('cd-days').textContent  = '00';
+      document.getElementById('cd-hours').textContent = '00';
+      document.getElementById('cd-mins').textContent  = '00';
+      document.getElementById('cd-secs').textContent  = '00';
+      return;
+    }
+    const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins  = Math.floor((diff / (1000 * 60)) % 60);
+    const secs  = Math.floor((diff / 1000) % 60);
+ 
+    document.getElementById('cd-days').textContent  = pad(days);
+    document.getElementById('cd-hours').textContent = pad(hours);
+    document.getElementById('cd-mins').textContent  = pad(mins);
+    document.getElementById('cd-secs').textContent  = pad(secs);
+  }
+ 
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+ 
+
+<!-- Card Section -->
+
+<section class="section-block">
+  <div class="block-card">
+ 
+    <!-- Left Aside -->
+    <div class="block-aside">
+      <img class="block-aside-img" src="Assets/Images/bg-img.png" alt="Home and outdoor bg"/>
+      <div class="block-aside-content">
+        <p class="block-aside-title">Home and<br/>outdoor</p>
+        <button class="block-aside-btn">Source now</button>
+      </div>
+    </div>
+ 
+    <!-- Right: 8 items grid -->
+    <div class="block-items">
+ 
+      <!-- Row 1 -->
+      <div class="block-item">
+        <div class="block-item-info">
+          <p class="block-item-name">Soft chairs</p>
+          <p class="block-item-price">From<br/>USD 19</p>
+        </div>
+        <div class="block-item-img-wrap">
+          <img src="Assets/Images/sofa_chairs.png" alt="Soft chairs"/>
+        </div>
+      </div>
+ 
+      <div class="block-item">
+        <div class="block-item-info">
+          <p class="block-item-name">Sofa &amp; chair</p>
+          <p class="block-item-price">From<br/>USD 19</p>
+        </div>
+        <div class="block-item-img-wrap">
+          <img src="Assets/Images/sofa_chair.png" alt="Sofa & chair"/>
+        </div>
+      </div>
+ 
+      <div class="block-item">
+        <div class="block-item-info">
+          <p class="block-item-name">Kitchen dishes</p>
+          <p class="block-item-price">From<br/>USD 19</p>
+        </div>
+        <div class="block-item-img-wrap">
+          <img src="Assets/Images/kitchen_dishes.png" alt="Kitchen dishes"/>
+        </div>
+      </div>
+ 
+      <div class="block-item">
+        <div class="block-item-info">
+          <p class="block-item-name">Smart watches</p>
+          <p class="block-item-price">From<br/>USD 19</p>
+        </div>
+        <div class="block-item-img-wrap">
+          <img src="Assets/Images/smart_watches.png" alt="Smart watches"/>
+        </div>
+      </div>
+ 
+      <!-- Row 2 -->
+      <div class="block-item">
+        <div class="block-item-info">
+          <p class="block-item-name">Kitchen mixer</p>
+          <p class="block-item-price">From<br/>USD 100</p>
+        </div>
+        <div class="block-item-img-wrap">
+          <img src="Assets/Images/kitchen_mixer.png" alt="Kitchen mixer"/>
+        </div>
+      </div>
+ 
+      <div class="block-item">
+        <div class="block-item-info">
+          <p class="block-item-name">Blenders</p>
+          <p class="block-item-price">From<br/>USD 39</p>
+        </div>
+        <div class="block-item-img-wrap">
+          <img src="Assets/Images/blender.png" alt="Blenders"/>
+        </div>
+      </div>
+ 
+      <div class="block-item">
+        <div class="block-item-info">
+          <p class="block-item-name">Home appliance</p>
+          <p class="block-item-price">From<br/>USD 19</p>
+        </div>
+        <div class="block-item-img-wrap">
+          <img src="Assets/Images/rasm.png" alt="Home appliance"/>
+        </div>
+      </div>
+ 
+      <div class="block-item">
+        <div class="block-item-info">
+          <p class="block-item-name">Coffee maker</p>
+          <p class="block-item-price">From<br/>USD 10</p>
+        </div>
+        <div class="block-item-img-wrap">
+          <img src="Assets/Images/coffee_maker.png" alt="Coffee maker"/>
+        </div>
+      </div>
+ 
+    </div><!-- /block-items -->
+ 
+  </div><!-- /block-card -->
+</section>
+ 
+
 <!-- ── FOOTER ─────────────────────────────────────────── -->
 <footer class="footer">
   <div class="footer-inner">
