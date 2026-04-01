@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Listview Page</title>
+    <link rel="stylesheet" href="items.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <a class="logo" href="#">
+      <div class="logo-icon">
+        <img src="Assets/Images/logo-colored.png" alt="" srcset="">
+      </div>
+    </a>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input class="search-input" type="text" placeholder="Search"/>
+      <div class="divider"></div>
+      <select class="category-select">
+        <option>All category</option>
+        <option>Electronics</option>
+        <option>Clothing</option>
+        <option>Books</option>
+        <option>Home &amp; Garden</option>
+        <option>Sports</option>
+      </select>
+      <button class="search-btn">Search</button>
+    </div>
+
+    <!-- Action Icons -->
+    <div class="nav-actions">
+      <a class="nav-action" href="#">
+        <img class="svg_1" src="Assets/Images/profile.svg"> 
+        <span>Profile</span>
+      </a>
+      <a class="nav-action" href="#">
+        <img src="Assets/Images/msg.svg" alt="" srcset="">
+        <span>Message</span>
+      </a>
+      <a class="nav-action" href="#">
+        <img src="Assets/Images/order.svg" alt="" srcset="">
+        <span>Orders</span>
+      </a>
+      <a class="nav-action" href="#">
+        <img src="Assets/Images/cart.svg" alt="" srcset="">
+        <span>My cart</span>
+      </a>
+    </div>
+
+  </nav>
+
+  <!-- Secondary Nav Bar -->
+  <div class="secondary-navbar">
+    <div class="secondary-navbar-inner">
+      <!-- Left: nav links -->
+      <div class="secondary-nav-links">
+        <a class="secondary-nav-link" href="#">
+          <span class="hamburger-icon">&#9776;</span>
+          All category
+        </a>
+        <a class="secondary-nav-link" href="#">Hot offers</a>
+        <a class="secondary-nav-link" href="#">Gift boxes</a>
+        <a class="secondary-nav-link" href="#">Projects</a>
+        <a class="secondary-nav-link" href="item-list.html">Menu item</a>
+        <a class="secondary-nav-link has-dropdown" href="#">
+          Help
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+
+
+      <!-- Right: language & ship to -->
+      <div class="secondary-nav-right">
+        <a class="secondary-nav-right-item" href="#">
+          English, USD
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <a class="secondary-nav-right-item" href="#">
+          Ship to
+          <img class="flag-icon" src="https://flagcdn.com/w20/de.png" alt="Germany flag" width="20" height="14"/>
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="/main-front-page/index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Clothings</a> <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Men's wear</a> <i class="fa-solid fa-chevron-right"></i>
+            <span>Summer clothing</span>
+        </div>
+    </nav>
+
+    <main class="main-content container">
+        <aside class="sidebar">
+            <div class="filter-group">
+                <div class="filter-header">Filter <button id="filterClearBtn"
+                        style="background: none; border: none; color: #0D6EFD; font-size: 14px; cursor: pointer; margin-left: auto;">Clear</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-header">Category <i class="fa-solid fa-chevron-up"></i></div>
+                <ul class="filter-list">
+                    <li>Mobile accessory</li>
+                    <li>Electronics</li>
+                    <li>Smartphones</li>
+                    <li>Modern tech</li>
+                    <li class="see-all">See all</li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-header">Brands <i class="fa-solid fa-chevron-up"></i></div>
+                <label class="checkbox-container">Samsung <input type="checkbox"><span class="checkmark"></span></label>
+                <label class="checkbox-container">Apple <input type="checkbox" checked><span
+                        class="checkmark"></span></label>
+                <label class="checkbox-container">Huawei <input type="checkbox"><span class="checkmark"></span></label>
+                <label class="checkbox-container">Pocco <input type="checkbox"><span class="checkmark"></span></label>
+                <label class="checkbox-container">Lenovo <input type="checkbox"><span class="checkmark"></span></label>
+                <div class="see-all">See all</div>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-header">Price range <i class="fa-solid fa-chevron-up"></i></div>
+                <div class="range-slider">
+                    <div class="slider-track"></div>
+                    <div class="slider-handle left"></div>
+                    <div class="slider-handle right"></div>
+                </div>
+                <div class="price-inputs">
+                    <div class="input-wrap">
+                        <span>Min</span>
+                        <input type="number" placeholder="0">
+                    </div>
+                    <div class="input-wrap">
+                        <span>Max</span>
+                        <input type="number" placeholder="999999">
+                    </div>
+                </div>
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-header">Condition <i class="fa-solid fa-chevron-up"></i></div>
+                <label class="radio-container">Any <input type="radio" name="condition" checked><span
+                        class="radio-mark"></span></label>
+                <label class="radio-container">Refurbished <input type="radio" name="condition"><span
+                        class="radio-mark"></span></label>
+                <label class="radio-container">Brand new <input type="radio" name="condition"><span
+                        class="radio-mark"></span></label>
+                <label class="radio-container">Old items <input type="radio" name="condition"><span
+                        class="radio-mark"></span></label>
+            </div>
+        </aside>
+
+        <section class="products-section" id="product-container">
+            <div class="list-controls">
+                <div class="items-count">12,911 items in <strong>Mobile accessory</strong></div>
+                <div class="controls-right">
+                    <label class="verified-label"><input type="checkbox" checked> Verified only</label>
+                    <select class="sort-select">
+                        <option>Featured</option>
+                    </select>
+                    <div class="view-icons">
+                        <div class="icon-box"><i class="fa-solid fa-table-cells"></i></div>
+                        <div class="icon-box active"><i class="fa-solid fa-list"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pagination-anchor"></div>
+        </section>
+
+        <script>
+const products = [
+    { title: "Canon Camera EOS 2000, Black 10x zoom", price: 998.00, oldPrice: 1128.00, rating: 7.5, orders: 154, img: "Assets/Images/phone.png", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    { title: "GoPro HERO6 4K Action Camera - Black", price: 998.00, oldPrice: null, rating: 7.5, orders: 154, img: "Assets/Images/mobilephones.png", desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },
+    { title: "Samsung Galaxy Tab S7 FE 12.4\" 64GB", price: 598.00, oldPrice: null, rating: 7.5, orders: 154, img: "Assets/Images/smart_phone.png", desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
+    { title: "Microsoft Surface Laptop 4 13.5\"", price: 1298.00, oldPrice: null, rating: 7.5, orders: 154, img: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400", desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+    { title: "Apple Watch Series 7 GPS, 41mm", price: 398.00, oldPrice: 428.00, rating: 7.5, orders: 154, img: "https://images.unsplash.com/photo-1546868871-70c122467d9b?w=400", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium." },
+    { title: "Sony WH-1000XM4 Wireless Headphones", price: 298.00, oldPrice: null, rating: 7.5, orders: 154, img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400", desc: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur." }
+];
+
+const container = document.getElementById('product-container');
+
+function render() {
+    // Remove existing cards before re-rendering
+    document.querySelectorAll('.product-card').forEach(el => el.remove());
+
+    products.forEach(p => {
+        const html = `
+            <div class="product-card">
+                <div class="product-img"><img src="${p.img}"></div>
+                <div class="product-details">
+                    <div class="details-top">
+                        <h3 class="product-title">${p.title}</h3>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">$${p.price.toFixed(2)}</span>
+                        ${p.oldPrice ? `<span class="old-price">$${p.oldPrice.toFixed(2)}</span>` : ''}
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars">★★★★☆ <span class="rating-num">${p.rating}</span></div>
+                        <span class="dot"></span>
+                        <span class="orders">${p.orders} orders</span>
+                        <span class="dot"></span>
+                        <span class="shipping">Free Shipping</span>
+                    </div>
+                    <p class="description">${p.desc}</p>
+                    <a href="#" class="view-link">View details</a>
+                </div>
+            </div>`;
+        document.getElementById('pagination-anchor').insertAdjacentHTML('beforebegin', html);
+    });
+}
+
+// Logic for Price Inputs & Visual Slider
+const minInput = document.querySelector('input[placeholder="0"]');
+const maxInput = document.querySelector('input[placeholder="999999"]');
+const track = document.querySelector('.slider-track');
+
+document.querySelector('.apply-btn').addEventListener('click', () => {
+    alert(`Filtering prices between $${minInput.value || 0} and $${maxInput.value || 999999}`);
+});
+
+// Clear Filters Functionality
+document.getElementById('filterClearBtn').addEventListener('click', function () {
+    // Clear checkboxes
+    document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(input => {
+        input.checked = false;
+    });
+    // Reset radio buttons to "Any"
+    document.querySelectorAll('.sidebar input[type="radio"]').forEach(input => {
+        input.checked = input.value === 'Any' || input.parentElement.textContent.trim().startsWith('Any');
+    });
+    // Clear price inputs
+    if (minInput) minInput.value = '';
+    if (maxInput) maxInput.value = '';
+});
+
+// Initial Render
+render();
+        </script>
+</body>
+</main>
+
+</body>
+
+</html>

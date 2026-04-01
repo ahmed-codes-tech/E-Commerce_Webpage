@@ -1376,6 +1376,263 @@ border-radius: 6px;
   -webkit-box-orient: vertical;
 }
 
+/* Country section */
+
+/* ── SECTION COUNTRY ─────────────────────────────────────── */
+/* Paste this at the bottom of your style.css */
+
+.section-country {
+  width: 1177px;
+  position: relative;
+  left: 131px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Title: width:221, height:32 */
+.country-title {
+  width: 221px;
+  height: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  color: rgba(28, 28, 28, 1);
+  margin: 0 0 24px 0;
+}
+
+/* Outer grid: width:1177, height:82 — 5 columns x 2 rows */
+.country-grid {
+  width: 1177px;
+  height: 82px;
+  display: grid;
+  grid-template-columns: repeat(5, 221px);
+  grid-template-rows: repeat(2, 36px);
+  gap: 10px 0;
+}
+
+/* Each item: width:221, height:36 */
+.country-item {
+  width: 221px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.country-item:hover {
+  opacity: 0.75;
+}
+
+/* Flag image */
+.country-flag {
+  width: 32px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+  border: 1px solid rgba(222, 226, 231, 0.6);
+}
+
+/* Text block: left:39px from item start (flag 32px + 7px gap) */
+.country-text {
+  position: absolute;
+  left: 39px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Country name: width:116, height:24, font-size:16px */
+.country-name {
+  width: 116px;
+  height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: rgba(28, 28, 28, 1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* URL subtitle: width:83, height:16, top:20px, left:39px */
+.country-url {
+  width: 83px;
+  height: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(139, 150, 165, 1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: -4px;
+}
+
+/* Newletter Section */
+
+.section-newsletter {
+  height: 190px;
+  position: relative;
+  left: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+  background: rgba(239, 242, 244, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* Inner wrapper: width:617, height:113, centered */
+.newsletter-inner {
+  width: 617px;
+  height: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+ 
+/* Texts div: width:617, height:52 */
+.newsletter-texts {
+  width: 617px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 21px;
+}
+ 
+/* Title: width:268, height:28 */
+.newsletter-title {
+  width: 268px;
+  height: 28px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: rgba(28, 28, 28, 1);
+  margin: 0;
+  white-space: nowrap;
+}
+ 
+/* Desc: width:617, height:24 */
+.newsletter-desc {
+  width: 617px;
+  height: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: rgba(96, 96, 96, 1);
+  margin: 0;
+  white-space: nowrap;
+}
+ 
+/* Form row: width:392, height:40 */
+.newsletter-form {
+  width: 392px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+ 
+/* Input wrapper: width:274, height:40 */
+.newsletter-input-wrap {
+  width: 274px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(222, 226, 231, 1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+ 
+.newsletter-input-wrap:focus-within {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+ 
+/* Email icon: width:22, height:22, top:9px, left:8px */
+.newsletter-email-icon {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 9px;
+  left: 8px;
+  object-fit: contain;
+  pointer-events: none;
+}
+ 
+/* Input field: top:11px, left:36px */
+.newsletter-input {
+  position: absolute;
+  top: 0;
+  left: 36px;
+  width: calc(274px - 44px);
+  height: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(28, 28, 28, 1);
+  padding: 0;
+}
+ 
+.newsletter-input::placeholder {
+  color: rgba(139, 150, 165, 1);
+}
+ 
+/* Subscribe button: width:110, height:40 */
+.newsletter-btn {
+  width: 110px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0 16px;
+  background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+}
+ 
+.newsletter-btn:hover {
+  opacity: 0.9;
+}
+ 
+.newsletter-btn:active {
+  opacity: 0.8;
+}
+ 
+
 /* ── FOOTER ───────────────────────────────────────────── */
 .footer {
   background: rgba(255, 255, 255, 1);
