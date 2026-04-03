@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Listview Page</title>
-  <link rel="stylesheet" href="/main-front-page/Assets/items.css">
+  <link rel="stylesheet" href="/Assets/items.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -19,7 +19,7 @@
       <!-- Logo -->
       <a class="logo" href="#">
         <div class="logo-icon">
-          <img src="/main-front-page/Assets/Images/logo-colored.png" alt="" srcset="">
+          <img src="/Assets/Images/logo-colored.png" alt="" srcset="">
         </div>
       </a>
 
@@ -41,19 +41,19 @@
       <!-- Action Icons -->
       <div class="nav-actions">
         <a class="nav-action" href="#">
-          <img class="svg_1" src="/main-front-page/Assets/Images/profile.svg">
+          <img class="svg_1" src="/Assets/Images/profile.svg">
           <span>Profile</span>
         </a>
         <a class="nav-action" href="#">
-          <img src="/main-front-page/Assets/Images/msg.svg" alt="" srcset="">
+          <img src="/Assets/Images/msg.svg" alt="" srcset="">
           <span>Message</span>
         </a>
         <a class="nav-action" href="#">
-          <img src="/main-front-page/Assets/Images/order.svg" alt="" srcset="">
+          <img src="/Assets/Images/order.svg" alt="" srcset="">
           <span>Orders</span>
         </a>
         <a class="nav-action" href="cart.html">
-          <img src="/main-front-page/Assets/Images/cart.svg" alt="" srcset="">
+          <img src="/Assets/Images/cart.svg" alt="" srcset="">
           <span>My cart</span>
         </a>
       </div>
@@ -197,11 +197,6 @@
         </div>
       </div>
 
-      <!-- ─────────────────────────────────────────────────────────
-  ② PASTE inside <aside class="sidebar">
-     AFTER the closing </div> of the "Condition" filter-group
-     BEFORE </aside>
-──────────────────────────────────────────────────────────── -->
 
       <!-- Ratings filter -->
       <div class="filter-group">
@@ -305,25 +300,25 @@
 
     <script>
       const products = [
-  { key:"phone", title: "Canon Camera EOS 2000, Black 10x zoom", price: 998.00, oldPrice: 1128.00, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/phone.png", desc: "Lorem ipsum dolor sit amet..." },
+  { key:"phone", title: "Canon Camera EOS 2000, Black 10x zoom", price: 998.00, oldPrice: 1128.00, rating: 7.5, orders: 154, img: "/Assets/Images/phone.png", desc: "Lorem ipsum dolor sit amet..." },
   
-  { key:"mobilephones", title: "GoPro HERO6 4K Action Camera - Black", price: 998.00, oldPrice: null, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/mobilephones.png", desc: "Ut enim ad minim veniam..." },
+  { key:"mobilephones", title: "GoPro HERO6 4K Action Camera - Black", price: 998.00, oldPrice: null, rating: 7.5, orders: 154, img: "/Assets/Images/mobilephones.png", desc: "Ut enim ad minim veniam..." },
   
-  { key:"smart_phone", title: "Samsung Galaxy Tab S7 FE 12.4\" 64GB", price: 598.00, oldPrice: null, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/smart_phone.png", desc: "Duis aute irure dolor..." },
+  { key:"smart_phone", title: "Samsung Galaxy Tab S7 FE 12.4\" 64GB", price: 598.00, oldPrice: null, rating: 7.5, orders: 154, img: "/Assets/Images/smart_phone.png", desc: "Duis aute irure dolor..." },
   
-  { key:"laptops", title: "Microsoft Surface Laptop 4 13.5\"", price: 1298.00, oldPrice: null, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/laptops.png", desc: "Excepteur sint occaecat..." },
+  { key:"laptops", title: "Microsoft Surface Laptop 4 13.5\"", price: 1298.00, oldPrice: null, rating: 7.5, orders: 154, img: "/Assets/Images/laptops.png", desc: "Excepteur sint occaecat..." },
   
-  { key:"smartwatch", title: "Apple Watch Series 7 GPS, 41mm", price: 398.00, oldPrice: 428.00, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/smartwatch.png", desc: "Sed ut perspiciatis..." },
+  { key:"smartwatch", title: "Apple Watch Series 7 GPS, 41mm", price: 398.00, oldPrice: 428.00, rating: 7.5, orders: 154, img: "/Assets/Images/smartwatch.png", desc: "Sed ut perspiciatis..." },
   
-  { key:"headphone", title: "Sony WH-1000XM4 Wireless Headphones", price: 298.00, oldPrice: null, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/headphone.png", desc: "Nemo enim ipsam..." },
+  { key:"headphone", title: "Sony WH-1000XM4 Wireless Headphones", price: 298.00, oldPrice: null, rating: 7.5, orders: 154, img: "/Assets/Images/headphone.png", desc: "Nemo enim ipsam..." },
   
-  { key:"phone", title: "iPhone 13 Pro Max 256GB", price: 1099.00, oldPrice: 1199.00, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/phone.png", desc: "At vero eos et accusamus..." },
+  { key:"phone", title: "iPhone 13 Pro Max 256GB", price: 1099.00, oldPrice: 1199.00, rating: 7.5, orders: 154, img: "/Assets/Images/phone.png", desc: "At vero eos et accusamus..." },
   // ^^^ This is ANOTHER phone - consider changing key to "iphone" or removing duplicate
 
-  { key:"samsung_phone", title: "Samsung Galaxy S22 Ultra", price: 899.00, oldPrice: 999.00, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/mobilephones.png", desc: "Nam libero tempore..." },
+  { key:"samsung_phone", title: "Samsung Galaxy S22 Ultra", price: 899.00, oldPrice: 999.00, rating: 7.5, orders: 154, img: "/Assets/Images/mobilephones.png", desc: "Nam libero tempore..." },
   // ^^^ Changed from "mobilephones" to "samsung_phone" to avoid duplicate
 
-  { key:"ipad", title: "iPad Pro 11-inch M2 WiFi 128GB", price: 799.00, oldPrice: null, rating: 7.5, orders: 154, img: "/main-front-page/Assets/Images/smart_phone.png", desc: "Temporibus autem..." }
+  { key:"ipad", title: "iPad Pro 11-inch M2 WiFi 128GB", price: 799.00, oldPrice: null, rating: 7.5, orders: 154, img: "/Assets/Images/smart_phone.png", desc: "Temporibus autem..." }
   // ^^^ Changed from "smart_phones" to "ipad" - you'll need to add this to detail.html productData
 ];
       // Generate star HTML
@@ -650,7 +645,7 @@
       <!-- Form row -->
       <div class="newsletter-form">
         <div class="newsletter-input-wrap">
-          <img src="/main-front-page/Assets/Images/email.png" alt="Email icon" class="newsletter-email-icon" />
+          <img src="/Assets/Images/email.png" alt="Email icon" class="newsletter-email-icon" />
           <input class="newsletter-input" type="email" placeholder="Email" />
         </div>
         <button class="newsletter-btn">Subscribe</button>
@@ -669,7 +664,7 @@
         <!-- Logo -->
         <a class="footer-logo" href="#">
           <div class="footer-logo-icon">
-            <img src="/main-front-page/Assets/Images/logo-colored.png" alt="Brand logo" />
+            <img src="/Assets/Images/logo-colored.png" alt="Brand logo" />
           </div>
         </a>
         <!-- Description: top: 101px, left: 129px, width: 276, height: 48 -->
@@ -678,23 +673,23 @@
         <div class="footer-socials">
           <!-- Facebook: left: 129px -->
           <a class="footer-social-link" href="#">
-            <img src="/main-front-page/Assets/Images/facebook3.png" alt="Facebook" width="32" height="32" />
+            <img src="/Assets/Images/facebook3.png" alt="Facebook" width="32" height="32" />
           </a>
           <!-- Twitter: left: 171px (129 + 32 + 10 gap) -->
           <a class="footer-social-link" href="#">
-            <img src="/main-front-page/Assets/Images/twitter3.png" alt="Twitter" width="32" height="32" />
+            <img src="/Assets/Images/twitter3.png" alt="Twitter" width="32" height="32" />
           </a>
           <!-- LinkedIn: left: 213px (171 + 32 + 10 gap) -->
           <a class="footer-social-link" href="#">
-            <img src="/main-front-page/Assets/Images/linkedin3.png" alt="LinkedIn" width="32" height="32" />
+            <img src="/Assets/Images/linkedin3.png" alt="LinkedIn" width="32" height="32" />
           </a>
           <!-- Instagram -->
           <a class="footer-social-link" href="#">
-            <img src="/main-front-page/Assets/Images/instagram3.png" alt="" srcset="">
+            <img src="/Assets/Images/instagram3.png" alt="" srcset="">
           </a>
           <!-- YouTube -->
           <a class="footer-social-link" href="#">
-            <img src="/main-front-page/Assets/Images/youtube3.png" alt="" srcset="">
+            <img src="/Assets/Images/youtube3.png" alt="" srcset="">
           </a>
         </div>
       </div>
@@ -739,10 +734,10 @@
       <div class="footer-app">
         <h4 class="footer-col-title">Get app</h4>
         <a class="app-store-btn" href="#">
-          <img src="/main-front-page/Assets/Images/Subtract.png" alt="" srcset="">
+          <img src="/Assets/Images/Subtract.png" alt="" srcset="">
         </a>
         <a class="app-store-btn" href="#">
-          <img src="/main-front-page/Assets/Images/Logo.png" alt="" srcset="">
+          <img src="/Assets/Images/Logo.png" alt="" srcset="">
         </a>
       </div>
 
