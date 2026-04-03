@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="/main-front-page/Assets/detail.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/main-front-page/Assets/items.css"/>
+</head>
+<body>
+
+<!-- ── HEADER (same as other pages) ──────────────────────── -->
+<header>
+  <nav class="navbar">
+    <a class="logo" href="/main-front-page/Pages/index.html">
+      <div class="logo-icon">
+        <img src="/main-front-page/Assets/Images/logo-colored.png" alt="Brand logo"/>
+      </div>
+    </a>
+    <div class="search-bar">
+      <input class="search-input" type="text" placeholder="Search"/>
+      <div class="divider"></div>
+      <select class="category-select">
+        <option>All category</option>
+        <option>Electronics</option>
+        <option>Clothing</option>
+        <option>Books</option>
+        <option>Home &amp; Garden</option>
+        <option>Sports</option>
+      </select>
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="nav-actions">
+      <a class="nav-action" href="#"><img class="svg_1" src="/main-front-page/Assets/Images/profile.svg"/><span>Profile</span></a>
+      <a class="nav-action" href="#"><img src="/main-front-page/Assets/Images/msg.svg" alt=""/><span>Message</span></a>
+      <a class="nav-action" href="#"><img src="/main-front-page/Assets/Images/order.svg" alt=""/><span>Orders</span></a>
+      <a class="nav-action" href="/main-front-page/Pages/cart.html"><img src="/main-front-page/Assets/Images/cart.svg" alt=""/><span>My cart</span></a>
+    </div>
+  </nav>
+  <div class="secondary-navbar">
+    <div class="secondary-navbar-inner">
+      <div class="secondary-nav-links">
+        <a class="secondary-nav-link" href="#"><span class="hamburger-icon">&#9776;</span> All category</a>
+        <a class="secondary-nav-link" href="#">Hot offers</a>
+        <a class="secondary-nav-link" href="#">Gift boxes</a>
+        <a class="secondary-nav-link" href="#">Projects</a>
+        <a class="secondary-nav-link" href="/main-front-page/Pages/item-list.html">Menu item</a>
+        <a class="secondary-nav-link has-dropdown" href="#">Help
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+      <div class="secondary-nav-right">
+        <a class="secondary-nav-right-item" href="#">English, USD
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <a class="secondary-nav-right-item" href="#">Ship to
+          <img class="flag-icon" src="https://flagcdn.com/w20/de.png" alt="Germany flag" width="20" height="14"/>
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── BREADCRUMB ─────────────────────────────────────────── -->
+<nav class="breadcrumb">
+  <div class="det-container">
+    <a href="/main-front-page/Pages/index.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <a href="#">Clothings</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <a href="#">Men's wear</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span>Summer clothing</span>
+  </div>
+</nav>
+
+<!-- ── MAIN DETAIL SECTION ───────────────────────────────── -->
+<main class="det-container det-main">
+
+  <!-- ── Product Card ──────────────────────────────────────── -->
+  <div class="detail-card">
+
+    <!-- Left: Images -->
+    <div class="detail-images">
+      <div class="main-img-wrap">
+        <img class="main-img" id="main-product-img" src="/main-front-page/Assets/Images/shirt.png" alt="Product"/>
+      </div>
+      <div class="thumb-row">
+        <div class="thumb active" onclick="setMain(this, '/main-front-page/Assets/Images/shirt.png')">
+          <img src="/main-front-page/Assets/Images/shirt.png" alt=""/>
+        </div>
+        <div class="thumb" onclick="setMain(this, '/main-front-page/Assets/Images/polo-shirt.png')">
+          <img src="/main-front-page/Assets/Images/shirt-white.png" alt=""/>
+        </div>
+        <div class="thumb" onclick="setMain(this, '/main-front-page/Assets/Images/shirt-grey.png')">
+          <img src="/main-front-page/Assets/Images/shirt-grey.png" alt=""/>
+        </div>
+        <div class="thumb" onclick="setMain(this, '/main-front-page/Assets/Images/shirt-orange.png')">
+          <img src="/main-front-page/Assets/Images/shirt-orange.png" alt=""/>
+        </div>
+        <div class="thumb" onclick="setMain(this, '/main-front-page/Assets/Images/shirt-dark.png')">
+          <img src="/main-front-page/Assets/Images/shirt-dark.png" alt=""/>
+        </div>
+        <div class="thumb" onclick="setMain(this, '/main-front-page/Assets/Images/shirt-navy.png')">
+          <img src="/main-front-page/Assets/Images/shirt-navy.png" alt=""/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle: Product Info -->
+    <div class="detail-info">
+      <p class="in-stock"><i class="fa-solid fa-check"></i> In stock</p>
+      <h1 class="detail-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+
+      <div class="detail-meta">
+        <div class="det-stars">
+          <span class="star filled">★</span><span class="star filled">★</span>
+          <span class="star filled">★</span><span class="star filled">★</span>
+          <span class="star empty">★</span>
+          <span class="det-rating-num">9.3</span>
+        </div>
+        <span class="det-dot"></span>
+        <span class="det-reviews"><i class="fa-regular fa-comment"></i> 32 reviews</span>
+        <span class="det-dot"></span>
+        <span class="det-sold"><i class="fa-solid fa-shopping-bag"></i> 154 sold</span>
+      </div>
+
+      <!-- Price tiers -->
+      <div class="price-tiers">
+        <div class="price-tier price-tier--active">
+          <span class="tier-price">$98.00</span>
+          <span class="tier-qty">50-100 pcs</span>
+        </div>
+        <div class="price-tier">
+          <span class="tier-price">$90.00</span>
+          <span class="tier-qty">100-700 pcs</span>
+        </div>
+        <div class="price-tier">
+          <span class="tier-price">$78.00</span>
+          <span class="tier-qty">700+ pcs</span>
+        </div>
+      </div>
+
+      <!-- Specs table -->
+      <table class="specs-table">
+        <tr>
+          <td class="spec-label">Price:</td>
+          <td class="spec-value">Negotiable</td>
+        </tr>
+        <tr>
+          <td class="spec-label">Type:</td>
+          <td class="spec-value">Classic shoes</td>
+        </tr>
+        <tr>
+          <td class="spec-label">Material:</td>
+          <td class="spec-value">Plastic material</td>
+        </tr>
+        <tr>
+          <td class="spec-label">Design:</td>
+          <td class="spec-value">Modern nice</td>
+        </tr>
+        <tr>
+          <td class="spec-label">Customization:</td>
+          <td class="spec-value">Customized logo and design custom packages</td>
+        </tr>
+        <tr>
+          <td class="spec-label">Protection:</td>
+          <td class="spec-value">Refund Policy</td>
+        </tr>
+        <tr>
+          <td class="spec-label">Warranty:</td>
+          <td class="spec-value">2 years full warranty</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Right: Supplier Card -->
+    <div class="supplier-card">
+      <div class="supplier-top">
+        <div class="supplier-avatar">R</div>
+        <div>
+          <p class="supplier-name">Supplier</p>
+          <p class="supplier-company">Guanjoi Trading LLC</p>
+        </div>
+      </div>
+      <div class="supplier-info">
+        <p class="supplier-detail"><img src="https://flagcdn.com/w20/de.png" alt="DE" width="18" height="13"/> Germany, Berlin</p>
+        <p class="supplier-detail"><i class="fa-solid fa-shield-halved"></i> Verified Seller</p>
+        <p class="supplier-detail"><i class="fa-solid fa-globe"></i> Worldwide shipping</p>
+      </div>
+      <button class="btn-send-inquiry">Send inquiry</button>
+      <button class="btn-seller-profile">Seller's profile</button>
+      <div class="save-later">
+        <i class="fa-regular fa-heart"></i> Save for later
+      </div>
+    </div>
+
+  </div><!-- /detail-card -->
+
+  <!-- ── Tabs + Description ──────────────────────────────────── -->
+  <div class="detail-lower">
+
+    <!-- Left: Tabs content -->
+    <div class="detail-tabs-wrap">
+      <div class="detail-tabs">
+        <button class="det-tab active" data-tab="description">Description</button>
+        <button class="det-tab" data-tab="reviews">Reviews</button>
+        <button class="det-tab" data-tab="shipping">Shipping</button>
+        <button class="det-tab" data-tab="seller">About seller</button>
+      </div>
+
+      <div class="tab-content active" id="tab-description">
+        <p class="tab-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <p class="tab-text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+        <!-- Specs detail table -->
+        <table class="detail-specs-table">
+          <tr><td>Model</td><td>#8786867</td></tr>
+          <tr><td>Style</td><td>Classic style</td></tr>
+          <tr><td>Certificate</td><td>ISO-898921212</td></tr>
+          <tr><td>Size</td><td>34mm x 450mm x 19mm</td></tr>
+          <tr><td>Memory</td><td>36GB RAM</td></tr>
+        </table>
+
+        <!-- Feature list -->
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-check"></i> Some great feature name here</li>
+          <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet, consectetur</li>
+          <li><i class="fa-solid fa-check"></i> Duis aute irure dolor in reprehenderit</li>
+          <li><i class="fa-solid fa-check"></i> Some great feature name here</li>
+        </ul>
+      </div>
+
+      <div class="tab-content" id="tab-reviews">
+        <p class="tab-text">Customer reviews will appear here.</p>
+      </div>
+      <div class="tab-content" id="tab-shipping">
+        <p class="tab-text">Shipping information will appear here.</p>
+      </div>
+      <div class="tab-content" id="tab-seller">
+        <p class="tab-text">Seller information will appear here.</p>
+      </div>
+    </div>
+
+    <!-- Right: You may like -->
+    <div class="you-may-like">
+      <h3 class="yml-title">You may like</h3>
+      <div class="yml-list">
+        <div class="yml-item">
+          <img src="/main-front-page/Assets/Images/blazer.png" alt="Men Blazers"/>
+          <div class="yml-info">
+            <p class="yml-name">Men Blazers Sets Elegant Formal</p>
+            <p class="yml-price">$7.00 - $99.50</p>
+          </div>
+        </div>
+        <div class="yml-item">
+          <img src="/main-front-page/Assets/Images/polo-shirt.png" alt="Men Shirt"/>
+          <div class="yml-info">
+            <p class="yml-name">Men Shirt Sleeve Polo Contrast</p>
+            <p class="yml-price">$7.00 - $99.50</p>
+          </div>
+        </div>
+        <div class="yml-item">
+          <img src="/main-front-page/Assets/Images/smartwatch.png" alt="Apple Watch"/>
+          <div class="yml-info">
+            <p class="yml-name">Apple Watch Series Space Gray</p>
+            <p class="yml-price">$7.00 - $99.50</p>
+          </div>
+        </div>
+        <div class="yml-item">
+          <img src="/main-front-page/Assets/Images/headphone.png" alt="Headphones"/>
+          <div class="yml-info">
+            <p class="yml-name">Basketball Crew Socks Long Stuff</p>
+            <p class="yml-price">$7.00 - $99.50</p>
+          </div>
+        </div>
+        <div class="yml-item">
+          <img src="/main-front-page/Assets/Images/shirt.png" alt="T-Shirt"/>
+          <div class="yml-info">
+            <p class="yml-name">New Summer Men's castrol T-Shirts</p>
+            <p class="yml-price">$7.00 - $99.50</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /detail-lower -->
+
+  <!-- ── Related Products ──────────────────────────────────── -->
+  <div class="related-section">
+    <h2 class="related-title">Related products</h2>
+    <div class="related-grid" id="related-grid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- ── Super Discount Banner ─────────────────────────────── -->
+  <div class="super-discount-banner">
+    <div class="sd-text">
+      <p class="sd-title">Super discount on more than 100 USD</p>
+      <p class="sd-sub">Have you ever finally just write dummy info</p>
+    </div>
+    <button class="sd-btn">Shop now</button>
+  </div>
+
+</main>
+
+<!-- ── NEWSLETTER ─────────────────────────────────────────── -->
+<section class="section-newsletter">
+  <div class="newsletter-inner">
+    <div class="newsletter-texts">
+      <p class="newsletter-title">Subscribe on our newsletter</p>
+      <p class="newsletter-desc">Get daily news on upcoming offers from many suppliers all over the world</p>
+    </div>
+    <div class="newsletter-form">
+      <div class="newsletter-input-wrap">
+        <img src="/main-front-page/Assets/Images/email.png" alt="Email icon" class="newsletter-email-icon"/>
+        <input class="newsletter-input" type="email" placeholder="Email"/>
+      </div>
+      <button class="newsletter-btn">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="footer-logo" href="#"><div class="footer-logo-icon"><img src="/main-front-page/Assets/Images/logo-colored.png" alt="Brand logo"/></div></a>
+      <p class="footer-desc">Best information about the company gies here but now lorem ipsum is</p>
+      <div class="footer-socials">
+        <a class="footer-social-link" href="#"><img src="/main-front-page/Assets/Images/facebook3.png" alt="Facebook" width="32" height="32"/></a>
+        <a class="footer-social-link" href="#"><img src="/main-front-page/Assets/Images/twitter3.png" alt="Twitter" width="32" height="32"/></a>
+        <a class="footer-social-link" href="#"><img src="/main-front-page/Assets/Images/linkedin3.png" alt="LinkedIn" width="32" height="32"/></a>
+        <a class="footer-social-link" href="#"><img src="/main-front-page/Assets/Images/instagram3.png" alt="Instagram"/></a>
+        <a class="footer-social-link" href="#"><img src="/main-front-page/Assets/Images/youtube3.png" alt="YouTube"/></a>
+      </div>
+    </div>
+    <div class="footer-col footer-col--about">
+      <h4 class="footer-col-title">About</h4>
+      <a class="footer-col-link" href="#">About Us</a>
+      <a class="footer-col-link" href="#">Find store</a>
+      <a class="footer-col-link" href="#">Categories</a>
+      <a class="footer-col-link" href="#">Blogs</a>
+    </div>
+    <div class="footer-col footer-col--partnership">
+      <h4 class="footer-col-title">Partnership</h4>
+      <a class="footer-col-link" href="#">About Us</a>
+      <a class="footer-col-link" href="#">Find store</a>
+      <a class="footer-col-link" href="#">Categories</a>
+      <a class="footer-col-link" href="#">Blogs</a>
+    </div>
+    <div class="footer-col footer-col--information">
+      <h4 class="footer-col-title">Information</h4>
+      <a class="footer-col-link" href="#">Help Center</a>
+      <a class="footer-col-link" href="#">Money Refund</a>
+      <a class="footer-col-link" href="#">Shipping</a>
+      <a class="footer-col-link" href="#">Contact us</a>
+    </div>
+    <div class="footer-col footer-col--users">
+      <h4 class="footer-col-title">For users</h4>
+      <a class="footer-col-link" href="#">Login</a>
+      <a class="footer-col-link" href="#">Register</a>
+      <a class="footer-col-link" href="#">Settings</a>
+      <a class="footer-col-link" href="#">My Orders</a>
+    </div>
+    <div class="footer-app">
+      <h4 class="footer-col-title">Get app</h4>
+      <a class="app-store-btn" href="#"><img src="/main-front-page/Assets/Images/Subtract.png" alt=""/></a>
+      <a class="app-store-btn" href="#"><img src="/main-front-page/Assets/Images/Logo.png" alt=""/></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copyright">© 2023 Ecommerce.</span>
+    <a class="footer-lang" href="#">
+      <img src="https://flagcdn.com/w20/us.png" alt="US flag" width="20" height="14"/>
+      English
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script>
+// ── Product data (each product has its own details) ──────────
+const productData = {
+  "phone": {
+    title: "Canon Camera EOS 2000, Black 10x zoom",
+    img: "/main-front-page/Assets/Images/phone.png",
+    thumbs: ["phone.png","mobilephones.png","smart_phone.png","phone.png","mobilephones.png","smart_phone.png"],
+    stock: true, rating: 7.5, reviews: 32, sold: 154,
+    tiers: [{price:"$998.00",qty:"50-100 pcs"},{price:"$890.00",qty:"100-700 pcs"},{price:"$780.00",qty:"700+ pcs"}],
+    specs: {Price:"Negotiable",Type:"DSLR Camera",Material:"Plastic & Metal",Design:"Professional",Customization:"Custom logo available",Protection:"Refund Policy",Warranty:"2 years full warranty"},
+    desc: "High performance DSLR camera with 10x optical zoom. Perfect for professional photography. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    model:"#CAM2000", style:"Professional", cert:"ISO-123456", size:"150mm x 116mm x 76mm", memory:"32GB SD"
+  },
+  "mobilephones": {
+    title: "GoPro HERO6 4K Action Camera - Black",
+    img: "/main-front-page/Assets/Images/mobilephones.png",
+    thumbs: ["mobilephones.png","smart_phone.png","phone.png","mobilephones.png","smart_phone.png","phone.png"],
+    stock: true, rating: 7.5, reviews: 28, sold: 210,
+    tiers: [{price:"$998.00",qty:"50-100 pcs"},{price:"$890.00",qty:"100-700 pcs"},{price:"$780.00",qty:"700+ pcs"}],
+    specs: {Price:"Negotiable",Type:"Action Camera",Material:"Durable Plastic",Design:"Compact",Customization:"Custom bundles",Protection:"Refund Policy",Warranty:"1 year warranty"},
+    desc: "4K action camera with waterproof design. Perfect for adventure sports. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    model:"#HERO6BLK", style:"Action", cert:"ISO-789012", size:"62mm x 44mm x 33mm", memory:"64GB SD"
+  },
+  "smart_phone": {
+    title: "Samsung Galaxy Tab S7 FE 12.4\" 64GB",
+    img: "/main-front-page/Assets/Images/smart_phone.png",
+    thumbs: ["smart_phone.png","phone.png","mobilephones.png","smart_phone.png","phone.png","mobilephones.png"],
+    stock: true, rating: 7.5, reviews: 45, sold: 98,
+    tiers: [{price:"$598.00",qty:"50-100 pcs"},{price:"$520.00",qty:"100-700 pcs"},{price:"$480.00",qty:"700+ pcs"}],
+    specs: {Price:"Negotiable",Type:"Tablet",Material:"Aluminum & Glass",Design:"Slim",Customization:"Enterprise packages",Protection:"Refund Policy",Warranty:"2 years warranty"},
+    desc: "Large 12.4 inch display tablet with 64GB storage. Ideal for productivity and entertainment. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    model:"#TABS7FE", style:"Modern", cert:"ISO-345678", size:"285mm x 185mm x 6mm", memory:"64GB"
+  },
+  "laptops": {
+    title: "Microsoft Surface Laptop 4 13.5\"",
+    img: "/main-front-page/Assets/Images/laptops.png",
+    thumbs: ["laptops.png","phone.png","mobilephones.png","laptops.png","smart_phone.png","phone.png"],
+    stock: true, rating: 7.5, reviews: 61, sold: 77,
+    tiers: [{price:"$1298.00",qty:"10-50 pcs"},{price:"$1150.00",qty:"50-200 pcs"},{price:"$999.00",qty:"200+ pcs"}],
+    specs: {Price:"Negotiable",Type:"Laptop",Material:"Alcantara & Metal",Design:"Premium Slim",Customization:"Corporate bundles",Protection:"Refund Policy",Warranty:"2 years warranty"},
+    desc: "Premium laptop with stunning PixelSense display. Powered by AMD Ryzen processor for exceptional performance. Excepteur sint occaecat cupidatat non proident.",
+    model:"#SURF4-13", style:"Premium", cert:"ISO-901234", size:"308mm x 223mm x 14.5mm", memory:"16GB RAM"
+  },
+  "smartwatch": {
+    title: "Apple Watch Series 7 GPS, 41mm",
+    img: "/main-front-page/Assets/Images/smartwatch.png",
+    thumbs: ["smartwatch.png","phone.png","mobilephones.png","smartwatch.png","smart_phone.png","laptops.png"],
+    stock: true, rating: 7.5, reviews: 89, sold: 320,
+    tiers: [{price:"$398.00",qty:"50-100 pcs"},{price:"$350.00",qty:"100-500 pcs"},{price:"$299.00",qty:"500+ pcs"}],
+    specs: {Price:"Negotiable",Type:"Smartwatch",Material:"Aluminum & Glass",Design:"Sporty",Customization:"Band customization",Protection:"Refund Policy",Warranty:"1 year warranty"},
+    desc: "The most advanced Apple Watch with larger display and fast charging. Track health, fitness and stay connected. Sed ut perspiciatis unde omnis iste natus error.",
+    model:"#AW7-41", style:"Sport/Casual", cert:"ISO-567890", size:"41mm x 35mm x 10.7mm", memory:"32GB"
+  },
+  "headphone": {
+    title: "Sony WH-1000XM4 Wireless Headphones",
+    img: "/main-front-page/Assets/Images/headphone.png",
+    thumbs: ["headphone.png","smartwatch.png","phone.png","headphone.png","mobilephones.png","laptops.png"],
+    stock: true, rating: 7.5, reviews: 112, sold: 445,
+    tiers: [{price:"$298.00",qty:"50-100 pcs"},{price:"$260.00",qty:"100-500 pcs"},{price:"$220.00",qty:"500+ pcs"}],
+    specs: {Price:"Negotiable",Type:"Headphones",Material:"Plastic & Leather",Design:"Over-ear",Customization:"Logo engraving",Protection:"Refund Policy",Warranty:"1 year warranty"},
+    desc: "Industry-leading noise canceling with exceptional sound quality. Up to 30-hour battery life with quick charging. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
+    model:"#WH1000XM4", style:"Premium Audio", cert:"ISO-111213", size:"254mm x 195mm x 78mm", memory:"N/A"
+  }
+};
+
+// Related products data
+const relatedProducts = [
+  {title:"Xiaomi Redmi 8 Original", price:"$32.00-$40.00", img:"/main-front-page/Assets/Images/mobilephones.png"},
+  {title:"Xiaomi Redmi 8 Original", price:"$32.00-$40.00", img:"/main-front-page/Assets/Images/smartwatch.png"},
+  {title:"Xiaomi Redmi 8 Original", price:"$32.00-$40.00", img:"/main-front-page/Assets/Images/headphone.png"},
+  {title:"Xiaomi Redmi 8 Original", price:"$32.00-$40.00", img:"/main-front-page/Assets/Images/laptops.png"},
+  {title:"Xiaomi Redmi 8 Original", price:"$32.00-$40.00", img:"/main-front-page/Assets/Images/phone.png"},
+  {title:"Xiaomi Redmi 8 Original", price:"$32.00-$40.00", img:"/main-front-page/Assets/Images/smart_phone.png"}
+];
+
+// ── Get product key from URL ─────────────────────────────────
+function getProductKey() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('product') || 'smartwatch';
+}
+
+// ── Load product data into page ──────────────────────────────
+function loadProduct() {
+  const key  = getProductKey();
+  const data = productData[key] || productData['smartwatch'];
+
+  // Main image
+  document.getElementById('main-product-img').src = data.img;
+
+  // Title
+  document.querySelector('.detail-title').textContent = data.title;
+
+  // Rating
+  document.querySelector('.det-rating-num').textContent = data.rating;
+  document.querySelector('.det-reviews').innerHTML = `<i class="fa-regular fa-comment"></i> ${data.reviews} reviews`;
+  document.querySelector('.det-sold').innerHTML = `<i class="fa-solid fa-shopping-bag"></i> ${data.sold} sold`;
+
+  // Stars
+  const full = Math.round(data.rating / 2);
+  const starEls = document.querySelectorAll('.det-stars .star');
+  starEls.forEach((s, i) => {
+    s.className = 'star ' + (i < full ? 'filled' : 'empty');
+  });
+
+  // Price tiers
+  const tierEls = document.querySelectorAll('.price-tier');
+  data.tiers.forEach((t, i) => {
+    if (tierEls[i]) {
+      tierEls[i].querySelector('.tier-price').textContent = t.price;
+      tierEls[i].querySelector('.tier-qty').textContent   = t.qty;
+    }
+  });
+
+  // Specs table
+  const specRows = document.querySelectorAll('.specs-table tr');
+  const specKeys = Object.keys(data.specs);
+  specRows.forEach((row, i) => {
+    if (specKeys[i]) {
+      row.querySelector('.spec-label').textContent = specKeys[i] + ':';
+      row.querySelector('.spec-value').textContent = data.specs[specKeys[i]];
+    }
+  });
+
+  // Description
+  document.querySelector('#tab-description .tab-text').textContent = data.desc;
+
+  // Detail specs table
+  const dRows = document.querySelectorAll('.detail-specs-table tr');
+  const dData = [['Model', data.model],['Style', data.style],['Certificate', data.cert],['Size', data.size],['Memory', data.memory]];
+  dRows.forEach((row, i) => {
+    if (dData[i]) { row.cells[0].textContent = dData[i][0]; row.cells[1].textContent = dData[i][1]; }
+  });
+
+  // Thumbnails
+  const thumbs = document.querySelectorAll('.thumb');
+  data.thumbs.forEach((t, i) => {
+    if (thumbs[i]) {
+      const imgEl = thumbs[i].querySelector('img');
+      imgEl.src = 'Assets/Images/' + t;
+      thumbs[i].onclick = function() { setMain(this, 'Assets/Images/' + t); };
+    }
+  });
+}
+
+// ── Thumbnail click ──────────────────────────────────────────
+function setMain(el, src) {
+  document.getElementById('main-product-img').src = src;
+  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// ── Tabs ─────────────────────────────────────────────────────
+document.querySelectorAll('.det-tab').forEach(tab => {
+  tab.addEventListener('click', function () {
+    document.querySelectorAll('.det-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    this.classList.add('active');
+    document.getElementById('tab-' + this.dataset.tab).classList.add('active');
+  });
+});
+
+// ── Price tier click ─────────────────────────────────────────
+document.querySelectorAll('.price-tier').forEach(tier => {
+  tier.addEventListener('click', function () {
+    document.querySelectorAll('.price-tier').forEach(t => t.classList.remove('price-tier--active'));
+    this.classList.add('price-tier--active');
+  });
+});
+
+// ── Related products ─────────────────────────────────────────
+function renderRelated() {
+  const grid = document.getElementById('related-grid');
+  grid.innerHTML = relatedProducts.map(p => `
+    <div class="related-card">
+      <div class="related-img"><img src="${p.img}" alt="${p.title}"/></div>
+      <p class="related-name">${p.title}</p>
+      <p class="related-price">${p.price}</p>
+    </div>`).join('');
+}
+
+loadProduct();
+renderRelated();
+</script>
+
+</body>
+</html>

@@ -1175,3 +1175,447 @@ opacity: 1;
   color: #94a3b8;
   font-size: 0.95rem;
 }
+
+/* ── Pagination ──────────────────────────────────────────── */
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+ 
+.show-count {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--gray-600);
+  background: #fff;
+  cursor: pointer;
+}
+ 
+.pagination {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+ 
+.page-btn {
+  padding: 8px 14px;
+  border-right: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: var(--gray-600);
+  transition: background 0.15s, color 0.15s;
+  user-select: none;
+}
+ 
+.page-btn:last-child {
+  border-right: none;
+}
+ 
+.page-btn:hover {
+  background: #f1f5f9;
+  color: var(--primary-blue);
+}
+ 
+.page-btn.active {
+  background: #eff2f4;
+  font-weight: 600;
+  color: var(--dark);
+}
+ 
+/* ── Rating stars coloring ───────────────────────────────── */
+.stars {
+  color: #ff9017;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+ 
+.rating-num {
+  color: var(--gray-600);
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 4px;
+}
+ 
+/* ── Free Shipping green ─────────────────────────────────── */
+.shipping {
+  color: #00b517 !important;
+  font-weight: 500;
+}
+ 
+/* ── Slider handle cursor ────────────────────────────────── */
+.slider-handle {
+  cursor: grab;
+}
+.slider-handle:active {
+  cursor: grabbing;
+}
+
+/* ── Ratings filter stars ────────────────────────────────── */
+.rating-row-filter {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+ 
+.filter-stars {
+  display: inline-flex;
+  gap: 1px;
+  font-size: 16px;
+  line-height: 1;
+  margin-left: 4px;
+}
+ 
+.star.filled {
+  color: #FF9017;
+}
+ 
+.star.empty {
+  color: #DEE2E7;
+}
+ 
+/* ── Product card rating stars ───────────────────────────── */
+.stars {
+  color: #FF9017;
+  font-size: 14px;
+}
+ 
+.rating-num {
+  color: #505050;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 4px;
+}
+ 
+/* ── Free Shipping ───────────────────────────────────────── */
+.shipping {
+  color: #00B517 !important;
+  font-weight: 500;
+}
+ 
+/* ── Pagination container ────────────────────────────────── */
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+ 
+/* Show 10 select */
+.show-count-wrap {
+  position: relative;
+}
+ 
+.show-count {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px 32px 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--gray-600);
+  background: #fff;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+ 
+/* Pagination buttons */
+.pagination {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+ 
+.page-btn {
+  padding: 8px 14px;
+  border-right: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: var(--gray-600);
+  transition: background 0.15s, color 0.15s;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+}
+ 
+.page-btn:last-child {
+  border-right: none;
+}
+ 
+.page-btn:hover {
+  background: #f1f5f9;
+  color: var(--primary-blue);
+}
+ 
+.page-btn.active {
+  background: #EFF2F4;
+  font-weight: 600;
+  color: var(--dark);
+}
+ 
+/* Arrow buttons slightly larger font */
+.page-arrow {
+  font-size: 18px;
+  color: var(--gray-600);
+}
+ 
+/* ── Slider handles ──────────────────────────────────────── */
+.slider-handle {
+  cursor: grab;
+}
+.slider-handle:active {
+  cursor: grabbing;
+}
+
+/* ── Active filter tags row ──────────────────────────────── */
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+ 
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--dark);
+  font-family: "Inter", sans-serif;
+}
+ 
+.filter-tag-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-500);
+  font-size: 11px;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.15s;
+}
+ 
+.filter-tag-close:hover { color: #e00; }
+ 
+.clear-all-filters {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-blue);
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 0 4px;
+}
+ 
+.clear-all-filters:hover { opacity: 0.75; }
+ 
+/* ── Collapsible filter body ─────────────────────────────── */
+.filter-group--collapsed .filter-list,
+.filter-group--collapsed .checkbox-container,
+.filter-group--collapsed .radio-container,
+.filter-group--collapsed .rating-row-filter,
+.filter-group--collapsed .see-all,
+.filter-group--collapsed .range-slider,
+.filter-group--collapsed .price-inputs,
+.filter-group--collapsed .apply-btn {
+  display: none;
+}
+ 
+/* ── Ratings filter stars ────────────────────────────────── */
+.rating-row-filter {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+ 
+.filter-stars {
+  display: inline-flex;
+  gap: 1px;
+  font-size: 16px;
+  margin-left: 4px;
+}
+ 
+.star.filled { color: #FF9017; }
+.star.empty  { color: #DEE2E7; }
+ 
+/* ── Product card rating stars ───────────────────────────── */
+.stars { color: #FF9017; font-size: 14px; }
+.rating-num { color: #505050; font-size: 13px; margin-left: 4px; }
+.shipping { color: #00B517 !important; font-weight: 500; }
+ 
+/* ── Slider handles ──────────────────────────────────────── */
+.slider-handle { cursor: grab; }
+.slider-handle:active { cursor: grabbing; }
+ 
+/* ── Pagination ──────────────────────────────────────────── */
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+ 
+.show-count {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px 32px 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--gray-600);
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 10px center;
+  cursor: pointer;
+}
+ 
+.pagination {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+ 
+.page-btn {
+  padding: 8px 14px;
+  border-right: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: var(--gray-600);
+  transition: background 0.15s, color 0.15s;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+}
+ 
+.page-btn:last-child { border-right: none; }
+.page-btn:hover { background: #f1f5f9; color: var(--primary-blue); }
+.page-btn.active { background: #EFF2F4; font-weight: 600; color: var(--dark); }
+.page-arrow { font-size: 18px; }
+ 
+/* ══════════════════════════════════════════════════════════
+   GRID VIEW LAYOUT — the core fix
+   ══════════════════════════════════════════════════════════ */
+ 
+/* Grid wrapper: 3-column grid */
+.grid-wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+ 
+/* Grid card: column layout */
+.grid-wrapper .product-card {
+  flex-direction: column !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  width: 100% !important;
+}
+ 
+/* Image area in grid */
+.grid-wrapper .product-img {
+  width: 100% !important;
+  height: 200px !important;
+  margin-right: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+ 
+.grid-wrapper .product-img img {
+  max-width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+}
+ 
+/* Details area in grid */
+.grid-wrapper .product-details {
+  padding: 12px 14px 16px;
+  flex: 1;
+}
+ 
+/* Title in grid */
+.grid-wrapper .product-title {
+  font-size: 14px;
+  max-width: 100%;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+ 
+/* Price in grid */
+.grid-wrapper .price { font-size: 16px; }
+.grid-wrapper .old-price { font-size: 12px; }
+ 
+/* Hide description in grid */
+.grid-wrapper .description { display: none !important; }
+ 
+/* Rating row in grid */
+.grid-wrapper .rating-row {
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+ 
+/* Wishlist btn: top-right corner in grid */
+.grid-wrapper .wishlist-btn {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 6px;
+  z-index: 2;
+}
+ 
+/* Hide view-link in grid */
+.grid-wrapper .view-link { display: none; }
+ 
+/* details-top in grid: just holds the spacer */
+.grid-wrapper .details-top {
+  margin-bottom: 4px;
+}
+ 

@@ -240,7 +240,7 @@ header {
 
 .about-link {
   position: absolute;
-  left: 336px; /* 466px (page) - 130px (inner div margin-left) */
+  left: 336px; 
   top: 0;
   width: 47px;
   height: 22px;
@@ -262,7 +262,7 @@ header {
 /* Right: language & ship to */
 .secondary-nav-right {
   position: absolute;
-  left: 911px; /* 1041px - 130px (left offset of inner) */
+  left: 911px; 
   top: 0;
   display: flex;
   align-items: center;
@@ -667,7 +667,7 @@ border-radius: 6px;
   height: 235px;
   display: flex;
   align-items: center;
-  margin-left: auto;    /* pushes to the right, gap from countdown = 411-150-198 ≈ 63px handled by margins */
+  margin-left: auto;   
   padding: 0 16px;
 }
  
@@ -681,10 +681,6 @@ border-radius: 6px;
   flex-shrink: 0;
   border-left: 1px solid rgba(222, 226, 231, 1);
 }
- 
-/* .sale-item:first-child {
-  border-left: none;
-} */
  
 /* Image wrapper */
 .sale-img-wrap {
@@ -958,9 +954,6 @@ border-radius: 6px;
   align-items: center;
 }
  
-/* ── Background image ── */
-/* Original: width:1326, height:683, top:1260, left:117 relative to page
-   Relative to card (top:1406, left:130): top = 1260-1406 = -146px, left = 117-130 = -13px */
 .inquiry-bg-img {
   position: absolute;
   width: 1326px;
@@ -1702,8 +1695,6 @@ border-radius: 6px;
   margin: 0 0 16px 0;
 }
 
-/* Socials row: top: 165px relative to footer = 125px from brand top (165-40)
-   Facebook at left:129, Twitter at left:171 (+42), LinkedIn at left:213 (+42) → gap = 10px */
 .footer-socials {
   width: 200px;
   height: 32px;
